@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(74, 202, 168);
+}
+
+nav {
+    background-color: rgb(74, 202, 168);
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: none;
+    color: #f2f2f2;
+    background-color: rgb(74, 202, 168);
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li:not(:first-child):hover {
+    background-color: #f2f2f2;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+}
+
+nav.show ul li {
+    display: block;
+}
+
+nav li:first-child {
+    display: block;
+    text-align: right;
+}
+
+.green {
+    color: rgb(74, 202, 168);
+}
+
+header {
+    padding: 22px;
+}
+
+header h1 {
+    vertical-align: center;
+    color: rgb(74, 202, 168);
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 60px;
+}
+
+header p {
+    color: #777;
+    font-weight: 700;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+section {
+    border-top: solid 6px #f4f4f4;
+    padding: 22px;
+}
+
+h3 {
+    color: #777;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 700;
+    vertical-align: baseline;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #888;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    vertical-align: baseline;
+}
+
+#projects img {
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#projects p {
+    margin-bottom: 25px;
+}
+
+#projects ul li {
+    display: inline-block;
+    color: #888;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    vertical-align: baseline;
+}
+
+#projects h4 {
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #777;
+    font-weight: 700;
+}
+
+#projects ul {
+    margin-bottom: 16px;
+}
+
+#contact {
+    border-bottom: solid 6px #f4f4f4;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+#contact li {
+    display: inline-block;
+}
+
+#contact li:not(:last-child) {
+    margin-right: 64px;
+}
+
+.contact-icon {
+    font-size: 32px;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    padding: 12px;
+}
+
+
+@media screen and (min-width: 600px) {
+    nav li:first-child {
+        display: none;
+    }
+    nav ul {
+        float: right;
+    }
+    nav ul li {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section, header {
+        padding: 42px;
+        padding-left: 62px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    section, header {
+        padding: 62px;
+        padding-left: 144px;
+    }
+} 

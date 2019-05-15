@@ -95,6 +95,15 @@ p {
     vertical-align: baseline;
 }
 
+#projects > div {
+    padding-bottom: 30px;
+}
+
+#projects > div:not(:first-child) {
+    padding-top: 30px;
+    border-top: solid 3px #f4f4f4;
+}
+
 #projects img {
     border-radius: 5px;
     margin-bottom: 30px;
